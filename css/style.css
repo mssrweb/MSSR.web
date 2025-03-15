@@ -660,24 +660,6 @@ body {
     text-decoration: underline;
 }
 
-/* Footer */
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 1.5rem;
-    font-size: 0.9rem;
-}
-.social-links a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 0.5rem;
-    transition: color 0.3s ease;
-}
-.social-links a:hover {
-    color: #007BFF;
-}
-
 /* Responsive */
 @media (max-width: 768px) {
     .navbar {
