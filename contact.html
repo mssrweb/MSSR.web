@@ -3,21 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MSSR Web ile iletişime geçin. Antalya’da web tasarım ve Google Maps kaydı hizmetleri için Musa Sarı ile bağlantı kurun.">
+    <meta name="keywords" content="MSSR Web iletişim, Musa Sarı, Antalya web tasarım, Google Maps kaydı">
+    <meta name="author" content="Musa Sarı">
     <title>İletişim - MSSR Web</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/MSSR-web.jpg" type="image/jpeg">
 </head>
 <body>
     <!-- Navbar -->
     <nav class="navbar">
         <div class="logo">
-            <img src="images/MSSR-web.jpg" alt="MSSR Web Logo" class="logo-img">
+            <a href="index.html">
+                <img src="images/MSSR-web.jpg" alt="MSSR Web Logo" class="logo-img">
+            </a>
         </div>
         <ul class="nav-links">
             <li><a href="index.html">Ana Sayfa</a></li>
             <li><a href="about.html">Hakkımda</a></li>
             <li><a href="services.html">Hizmetler</a></li>
-            <li><a href="contact.html">İletişim</a></li>
+            <li><a href="profile.html">Profil</a></li>
+            <li><a href="contact.html" class="active">İletişim</a></li>
         </ul>
         <div class="burger">
             <div class="line"></div>
@@ -27,24 +34,31 @@
     </nav>
 
     <!-- İletişim -->
-    <section id="iletisim" class="section">
-        <h2>İletişime Geçin</h2>
-        <form action="https://formspree.io/f/{your-form-id}" method="POST">
-            <input type="text" name="name" placeholder="Adınız" required>
-            <input type="email" name="email" placeholder="E-posta Adresiniz" required>
-            <textarea name="message" placeholder="Mesajınız" required></textarea>
-            <button type="submit" class="submit-button">Gönder</button>
-        </form>
-        <div class="contact-info">
-            <p>E-posta: <a href="mailto:mssr.web@gmail.com">mssr.web@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/musa-sar%C4%B1-59548b246/" target="_blank">Musa Sarı</a></p>
-            <p>Instagram: <a href="https://www.instagram.com/mmusa.srr/" target="_blank">mmusa.srr</a></p>
+    <section id="iletisim" class="section contact-section">
+        <div class="contact-container">
+            <h2>İletişime Geçin</h2>
+            <p>Aşağıdaki formu doldurarak veya direkt iletişim bilgilerimden bana ulaşabilirsiniz. İşletmenizi dijitalde büyütmek için birlikte çalışalım!</p>
+            <form action="https://formspree.io/f/{your-form-id}" method="POST" class="contact-form">
+                <input type="text" name="name" placeholder="Adınız" required aria-label="Adınız">
+                <input type="email" name="email" placeholder="E-posta Adresiniz" required aria-label="E-posta Adresiniz">
+                <textarea name="message" placeholder="Mesajınız" required aria-label="Mesajınız"></textarea>
+                <button type="submit" class="submit-button">Gönder</button>
+            </form>
+            <div class="contact-info">
+                <p><span class="icon">✉️</span> E-posta: <a href="mailto:mssr.web@gmail.com">mssr.web@gmail.com</a></p>
+                <p><span class="icon">🔗</span> LinkedIn: <a href="https://www.linkedin.com/in/musa-sar%C4%B1-59548b246/" target="_blank" aria-label="LinkedIn Profilimi Ziyaret Et">Musa Sarı</a></p>
+                <p><span class="icon">📸</span> Instagram: <a href="https://www.instagram.com/mmusa.srr/" target="_blank" aria-label="Instagram Profilimi Ziyaret Et">mmusa.srr</a></p>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
         <p>© 2025 MSSR Web - Antalya Dijital Çözümler</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/musa-sar%C4%B1-59548b246/" target="_blank" aria-label="LinkedIn Profilimi Ziyaret Et">LinkedIn</a> |
+            <a href="https://www.instagram.com/mmusa.srr/" target="_blank" aria-label="Instagram Profilimi Ziyaret Et">Instagram</a>
+        </div>
     </footer>
 
     <script src="js/script.js"></script>
